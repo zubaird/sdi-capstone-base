@@ -1,6 +1,8 @@
 import React, { useEffect, useState} from 'react';
 import config from './config'
 
+console.log(process.env)
+
 const ApiUrl = config[process.env.REACT_APP_NODE_ENV || "development"].apiUrl;
 
 function App() {
